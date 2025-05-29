@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구다혜 소개 페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f9f9f9;          /* 전체 배경: 깨끗한 오프화이트 */
+            --surface: #ffffff;     /* 카드 배경: 순수한 흰색 */
+            --accent: #444444;      /* 포인트 컬러: 차분한 다크 그레이 */
+            --text: #333333;        /* 본문 글자색: 짙은 그레이 */
+            --highlight: #000000;   /* 강조 글자색: 순수한 블랙 */
+            --border: #dddddd;      /* 테이블 경계: 밝은 회색 */
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            width: 85%; max-width: 1000px;
+            margin: 60px auto;
+            background: var(--surface);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .header {
+            background: linear-gradient(135deg, var(--highlight), var(--accent));
+            color: var(--surface);
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header h1 {
+            font-size: 3rem;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+        nav {
+            display: flex; justify-content: center;
+            gap: 16px; flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--surface);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover { background: rgba(0,0,0,0.1); }
+        section {
+            padding: 40px 20px;
+            border-left: 4px solid var(--accent);
+        }
+        section:nth-of-type(even) { background: #f5f5f5; }
+        h2 {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        p, li { font-size: 1rem; margin-bottom: 12px; }
+        ul, ol { margin-left: 24px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .videos { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 16px; }
+        .videos iframe {
+            flex: 1 1 45%; height: 240px;
+            border-radius: 8px; border: 1px solid var(--border);
+        }
+        .skills { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+        .skill {
+            background: var(--accent);
+            color: var(--surface);
+            padding: 8px 16px; border-radius: 20px;
+            font-weight: 600;
+        }
+        table {
+            width: 100%; border-collapse: collapse; margin-top: 16px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 8px; text-align: left;
+        }
+        th {
+            background: #f5f5f5;
+        }
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.9rem;
+            color: var(--text);
+            background: var(--surface);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>구다혜 소개 페이지</h1>
+        <nav>
+            <a href="#basic">기본정보</a>
+            <a href="#news">뉴스기사</a>
+            <a href="#idol">아이돌</a>
+            <a href="#about">자기소개</a>
+            <a href="#personality">성격</a>
+            <a href="#skills">스킬</a>
+            <a href="#hobbies">취미</a>
+            <a href="#future">미래</a>
+            <a href="#experience">경력</a>
+            <a href="#activities">활동</a>
+            <a href="#certificates">자격증</a>
+        </nav>
+    </div>
+
+    <section id="basic">
+        <h2>기본 정보</h2>
+        <p>이름: <strong class="highlight">구다혜</strong></p>
+        <p>나이: <strong class="highlight">만 21살</strong></p>
+        <p>학교: <strong class="highlight">한남대학교</strong></p>
+        <p>학과: <strong class="highlight">사학과 (23학번)</strong></p>
+        <p>학번: <strong class="highlight">20230357</strong></p>
+        <p>MBTI: <strong class="highlight">ISFP</strong></p>
+    </section>
+
+    <section id="news">
+        <h2>2025학년 1학기 경영정보학과 뉴스기사 모음</h2>
+        <ol>
+            <li><a href="https://www.aitimes.kr/news/articleView.html?idxno=33785">뉴스기사 1</a></li>
+            <li><a href="https://www.newsis.com/view/NISX20250317_0003102003">뉴스기사 2</a></li>
+            <li><a href="https://news.nate.com/view/20250325n36841">뉴스기사 3</a></li>
+            <li><a href="https://news.nate.com/view/20250401n06695">뉴스기사 4</a></li>
+            <li><a href="https://www.etnews.com/20250408000304">뉴스기사 5</a></li>
+            <li><a href="https://it.chosun.com/news/articleView.html?idxno=2023092138137">뉴스기사 6</a></li>
+            <li><a href="https://www.dt.co.kr/contents.html?article_no=2025042802101131044001">뉴스기사 7</a></li>
+            <li><a href="https://news.nate.com/view/20250506n12973">뉴스기사 8</a></li>
+            <li><a href="https://www.viva100.com/article/20250513500948">뉴스기사 9</a></li>
+            <li><a href="https://www.econovill.com/news/articleView.html?idxno=696555">뉴스기사 10</a></li>
+        </ol>
+    </section>
+
+    <section id="idol">
+        <h2>좋아하는 아이돌</h2>
+        <p>에스파 (aespa)</p>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/ZeerrnuLi5E" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4TWR90KJl84" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>간단한 자기소개</h2>
+        <p>만년초등학교, 만년중학교, 대덕고등학교를 거쳐 한남대학교에 재학</p>
+        <p>가족관계: 아버지, 어머니, 큰언니, 작은언니</p>
+    </section>
+
+    <section id="personality">
+        <h2>성격의 장단점</h2>
+        <ul>
+            <li>장점: 긍정적이고 활발하며 적극적, 사소한 즐거움을 찾음</li>
+            <li>단점: 서두르는 경향, 완벽주의적 성향, 타인의 평가에 민감</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>스킬</h2>
+        <div class="skills">
+            <span class="skill">기본 OA</span>
+            <span class="skill">사물놀이</span>
+            <span class="skill">MS Office</span>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>취미</h2>
+        <ul>
+            <li>여행 및 사진 촬영</li>
+            <li>독서 (역사 관련 서적)</li>
+            <li>카페 탐방</li>
+            <li>문화공연 관람</li>
+        </ul>
+    </section>
+
+    <section id="future">
+        <h2>미래와 진로</h2>
+        <p>어릴 때부터 '박물관 학예사'를 꿈꾸었으나, 사학만으로는 한계가 있어 경영정보학과 다전공을 신청</p>
+        <p>프로그래밍 등 새로운 분야를 통해 현재와 미래를 개척해 나가고자 함</p>
+    </section>
+
+    <section id="experience">
+        <h2>경력사항 (아르바이트, 근로 등 모든 활동)</h2>
+        <table>
+            <thead>
+                <tr><th>기간</th><th>근무처</th><th>업무내용</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>2024.01.02 ~ 2024.01.28</td><td>한남대학교</td><td>대학‧학과 보유 물품 조사, 강사상준 물품 등 500명 이상 물품 조사</td></tr>
+                <tr><td>2024.02.02~2024.08.17</td><td>대전 월드컵 경기장</td><td>대전 하나시티즌 이벤트 진행 요원 (어린이 대상 부스 운영)</td></tr>
+                <tr><td>2024.09.12</td><td>공유 오피스 공간</td><td>테스트 진행 및 체험물 작성 업무 진행</td></tr>
+                <tr><td>2024.12.30 ~ 2025.01.21</td><td>한남대학교</td><td>교내 물품 현황 방별 배치 조사 및 자료 정리</td></tr>
+                <tr><td>2025.02.10 ~ 2025.02.15</td><td>한남대학교</td><td>교내 행사 지원</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="activities">
+        <h2>교내외 활동</h2>
+        <table>
+            <thead>
+                <tr><th>기간</th><th>소속</th><th>활동내용</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>2023.09.13 ~ 2023.12.31</td><td>교내 중앙동아리 어울소리</td><td>사물놀이 경기 공연 기획 및 진행</td></tr>
+                <tr><td>2023.07.07 ~ 2023.07.12</td><td>대전 테이뮤어</td><td>전시 전 인원수 측정, 전시 보조, 안내 및 정리 (봉사활동)</td></tr>
+                <tr><td>2024.06.29</td><td>국제지식재산연수원</td><td>체험 진행 및 전시관 관리 (봉사활동)</td></tr>
+                <tr><td>2024.07.11</td><td>대전 서구청</td><td>‘북콘서트’ 운영 및 행사 보조, 유아 대상 프로그램 진행 (봉사활동)</td></tr>
+                <tr><td>2024.07.14</td><td>대전 시립 미술관</td><td>전시 연계 교육 프로그램 행사 보조 (봉사활동)</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="certificates">
+        <h2>자격증</h2>
+        <table>
+            <thead>
+                <tr><th>자격증명</th><th>취득일</th><th>발급기관</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>한국사능력검정시험 2급</td><td>2025.02.28</td><td>국사편찬위원회</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>&copy; 2025 구다혜. All rights reserved.</footer>
+</div>
+</body>
+</html>
